@@ -1,6 +1,7 @@
 import React from 'react';
 import { Divider, Spin } from 'antd';
 import useSWR from 'swr';
+import GridLayout from 'react-grid-layout';
 
 import { fetcher } from '../utils';
 import { Repo } from './repo';
@@ -20,13 +21,12 @@ export const RepoList = () => {
   const repos = data?.filter((repo) => repo.name.match(/^example-/));
 
   return (
-    <div>
+    <GridLayout cols={2} rowHeight={180} width={768}>
       {repos?.map((repo, index) => (
-        <React.Fragment key={repo.id}>
-          {index > 0 && <Divider />}
+        <div key={repo.id}>
           <Repo repo={repo} />
-        </React.Fragment>
+        </div>
       ))}
-    </div>
+    </GridLayout>
   )
 };
