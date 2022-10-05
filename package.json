@@ -1,7 +1,8 @@
 {
-  "name": "example-webpack-code-splitting",
-  "version": "1.0.1",
-  "description": "Webpack code splitting example",
+  "name": "test-yarn3-duplicates",
+  "packageManager": "yarn@3.2.3",
+  "version": "1.0.0",
+  "description": "Test yarn3 duplicates",
   "main": "src/index.js",
   "scripts": {
     "prebuild": "rm -fr ./dist",
@@ -23,8 +24,8 @@
     "eslint-config-airbnb": "^19.0.4",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",
-    "webpack": "^5.68.0",
-    "webpack-cli": "^4.9.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
