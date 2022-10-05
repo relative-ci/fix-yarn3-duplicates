@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "scripts": {
     "prebuild": "rm -fr ./dist",
-    "build": "webpack --mode production --json artifacts/webpack-stats.json",
+    "build": "webpack --mode production",
     "start": "webpack serve --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
