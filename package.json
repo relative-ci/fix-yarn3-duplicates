@@ -39,5 +39,9 @@
     "react-markdown": "^8.0.0",
     "react-router-dom": "^6.2.1",
     "swr": "^1.2.1"
+  },
+  "resolutions": {
+    "react-grid-layout/react-draggable": "4.4.5",
+    "react-resizable/react-draggable": "4.4.5"
   }
 }
