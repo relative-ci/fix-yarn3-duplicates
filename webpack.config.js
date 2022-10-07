@@ -16,6 +16,9 @@ module.exports = {
     hashDigestLength: 8,
   },
   resolve: {
+    alias: {
+      'react-draggable': path.dirname(require.resolve('react-draggable')),
+    },
     extensions: ['.jsx', '.js', '.json'],
   },
   module: {
