@@ -4,13 +4,13 @@
 
 ## Issue 
 
-When a package is a common dependency for multiple packages and the version range differs, Yarn 3 resolves correctly to a common version but **installs two different instances**:
+When a package is a common dependency for multiple packages, Yarn 3 resolves correctly to the same version but **can install two different instances**:
 
 
-| 1st level dependency | `react-draggable` version range |
-|---|---|
-| [react-grid-layout@1.3.4](https://github.com/react-grid-layout/react-grid-layout) | `^4.0.0` |
-| [react-resizable@1.4.5](https://github.com/react-grid-layout/react-resizable) | `^4.0.3` |
+| 1st level dependency | `react-draggable` version range | `peerDependencies` |
+|---|---|---|
+| [react-grid-layout@1.3.4](https://github.com/react-grid-layout/react-grid-layout) | `^4.0.0` | `{ "react": ">= 16.3.0", "react-dom": ">= 16.3.0" }` |
+| [react-resizable@1.4.5](https://github.com/react-grid-layout/react-resizable) | `^4.0.3` | `{ "react": ">= 16.3" }` |
 
 
 ```shell
