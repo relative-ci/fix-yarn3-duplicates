@@ -29,5 +29,5 @@ When a package is a common dependency for multiple packages and the version rang
 
 1. :no_entry_sign: webpack alias - webpack requires react-draggable as a dependency; yarn is not able to resolve react-draggable from react-grid-layout - https://github.com/relative-ci/fix-yarn3-duplicates/pull/4
 2. :no_entry_sign: `package.json` resolutions: overrides the dependency version, but is still installing duplicate instances - https://github.com/relative-ci/fix-yarn3-duplicates/pull/5
-3. :no_entry_sign: `yarn dedupe` - https://github.com/relative-ci/fix-yarn3-duplicates/pull/7
+3. :no_entry_sign: `yarn dedupe` does not have any impact - https://github.com/relative-ci/fix-yarn3-duplicates/pull/7
 4. :white_check_mark: packageExtensions - https://github.com/relative-ci/fix-yarn3-duplicates/pull/6
